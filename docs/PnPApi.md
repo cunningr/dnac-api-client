@@ -1,6 +1,6 @@
 # dnac_api_client.PnPApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -35,13 +35,15 @@ Method | HTTP request | Description
 
 
 # **api_v1_onboarding_pnp_device_claim_post**
-> ClaimDevicesResponse api_v1_onboarding_pnp_device_claim_post(request)
+> ClaimDevicesResponse api_v1_onboarding_pnp_device_claim_post(claim_device_request)
 
 Claim Device(s)
 
 This API is used to assign a project & workflow (i.e. claim) one of more devices.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -57,11 +59,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.PnPApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.ClaimDeviceRequest() # ClaimDeviceRequest | request
+claim_device_request = dnac_api_client.ClaimDeviceRequest() # ClaimDeviceRequest | request
 
 try:
     # Claim Device(s)
-    api_response = api_instance.api_v1_onboarding_pnp_device_claim_post(request)
+    api_response = api_instance.api_v1_onboarding_pnp_device_claim_post(claim_device_request)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PnPApi->api_v1_onboarding_pnp_device_claim_post: %s\n" % e)
@@ -71,7 +73,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**ClaimDeviceRequest**](ClaimDeviceRequest.md)| request | 
+ **claim_device_request** | [**ClaimDeviceRequest**](ClaimDeviceRequest.md)| request | 
 
 ### Return type
 
@@ -96,6 +98,8 @@ Get Device Count
 This API is used to get the number of the devices matching provided filters. This is useful for pageination.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -124,7 +128,7 @@ project_name = ['project_name_example'] # list[str] | Device Project Name (optio
 workflow_name = ['workflow_name_example'] # list[str] | Device Workflow Name (optional)
 smart_account_id = ['smart_account_id_example'] # list[str] | Device Smart Account (optional)
 virtual_account_id = ['virtual_account_id_example'] # list[str] | Device Virtual Account (optional)
-last_contact = true # bool | Device Has Contacted lastContact > 0 (optional)
+last_contact = True # bool | Device Has Contacted lastContact > 0 (optional)
 
 try:
     # Get Device Count
@@ -163,7 +167,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -176,6 +180,8 @@ Get Categorized Device Count
 Get Categorized Device Count
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -217,7 +223,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -230,6 +236,8 @@ List devices
 This API is used to get the list of devices that match the provided filter. Pagination and sorting are also supported. If a limit is not specified, it will default to return 50 devices.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -262,7 +270,7 @@ project_name = ['project_name_example'] # list[str] | Device Project Name (optio
 workflow_name = ['workflow_name_example'] # list[str] | Device Workflow Name (optional)
 smart_account_id = ['smart_account_id_example'] # list[str] | Device Smart Account (optional)
 virtual_account_id = ['virtual_account_id_example'] # list[str] | Device Virtual Account (optional)
-last_contact = true # bool | Device Has Contacted lastContact > 0 (optional)
+last_contact = True # bool | Device Has Contacted lastContact > 0 (optional)
 
 try:
     # List devices
@@ -305,7 +313,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -318,6 +326,8 @@ Get Device History
 Retrieves history for a specific device. Serial Number is a required parameter
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -363,7 +373,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -376,6 +386,8 @@ Delete Device
 This API is used to delete the specified device from the database.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -417,7 +429,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -430,6 +442,8 @@ Get Device by ID
 Get device details of the device with input device id
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -471,19 +485,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_onboarding_pnp_device_id_put**
-> UpdateDeviceResponse api_v1_onboarding_pnp_device_id_put(request, id)
+> UpdateDeviceResponse api_v1_onboarding_pnp_device_id_put(id, request_body)
 
 Update Device
 
 This API is used to update device details of a device that exists in the PnP database.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -499,12 +515,12 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.PnPApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.Device() # Device | request
 id = 'id_example' # str | id
+request_body = NULL # list[object] | request
 
 try:
     # Update Device
-    api_response = api_instance.api_v1_onboarding_pnp_device_id_put(request, id)
+    api_response = api_instance.api_v1_onboarding_pnp_device_id_put(id, request_body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PnPApi->api_v1_onboarding_pnp_device_id_put: %s\n" % e)
@@ -514,8 +530,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**Device**](Device.md)| request | 
  **id** | **str**| id | 
+ **request_body** | [**list[object]**](list.md)| request | 
 
 ### Return type
 
@@ -533,13 +549,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_onboarding_pnp_device_import_post**
-> ImportManyDevicesResponse api_v1_onboarding_pnp_device_import_post(request)
+> ImportManyDevicesResponse api_v1_onboarding_pnp_device_import_post(request_body)
 
 Import Many Devices
 
 This API is used to import a list of Planned devices to the PnP database. A Planned device is a device that the customer has bought and/or is planning to manage.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -555,11 +573,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.PnPApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.Device() # Device | request
+request_body = NULL # list[object] | request
 
 try:
     # Import Many Devices
-    api_response = api_instance.api_v1_onboarding_pnp_device_import_post(request)
+    api_response = api_instance.api_v1_onboarding_pnp_device_import_post(request_body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PnPApi->api_v1_onboarding_pnp_device_import_post: %s\n" % e)
@@ -569,7 +587,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**Device**](Device.md)| request | 
+ **request_body** | [**list[object]**](list.md)| request | 
 
 ### Return type
 
@@ -587,13 +605,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_onboarding_pnp_device_post**
-> CreateDeviceResponse api_v1_onboarding_pnp_device_post(request)
+> CreateDeviceResponse api_v1_onboarding_pnp_device_post(request_body)
 
 Create Device
 
 This API is used to add a Planned device to the PnP database. A Planned device is a device that the customer has bought and/or is planning to manage.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -609,11 +629,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.PnPApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.Device() # Device | request
+request_body = NULL # list[object] | request
 
 try:
     # Create Device
-    api_response = api_instance.api_v1_onboarding_pnp_device_post(request)
+    api_response = api_instance.api_v1_onboarding_pnp_device_post(request_body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PnPApi->api_v1_onboarding_pnp_device_post: %s\n" % e)
@@ -623,7 +643,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**Device**](Device.md)| request | 
+ **request_body** | [**list[object]**](list.md)| request | 
 
 ### Return type
 
@@ -641,13 +661,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_onboarding_pnp_device_provision_post**
-> ProvisionDeviceResponse api_v1_onboarding_pnp_device_provision_post(request)
+> ProvisionDeviceResponse api_v1_onboarding_pnp_device_provision_post(push_provision_request)
 
 Provision Device
 
 This API is used push one or more devices to Provisoned state and add them to inventory.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -663,11 +685,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.PnPApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.PushProvisionRequest() # PushProvisionRequest | request
+push_provision_request = dnac_api_client.PushProvisionRequest() # PushProvisionRequest | request
 
 try:
     # Provision Device
-    api_response = api_instance.api_v1_onboarding_pnp_device_provision_post(request)
+    api_response = api_instance.api_v1_onboarding_pnp_device_provision_post(push_provision_request)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PnPApi->api_v1_onboarding_pnp_device_provision_post: %s\n" % e)
@@ -677,7 +699,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**PushProvisionRequest**](PushProvisionRequest.md)| request | 
+ **push_provision_request** | [**PushProvisionRequest**](PushProvisionRequest.md)| request | 
 
 ### Return type
 
@@ -695,13 +717,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_onboarding_pnp_device_reset_post**
-> ResetDeviceResponse api_v1_onboarding_pnp_device_reset_post(request)
+> ResetDeviceResponse api_v1_onboarding_pnp_device_reset_post(reset_request)
 
 Reset Device
 
 This API is used to recover a device from a Workflow Execution Error state.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -717,11 +741,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.PnPApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.ResetRequest() # ResetRequest | request
+reset_request = dnac_api_client.ResetRequest() # ResetRequest | request
 
 try:
     # Reset Device
-    api_response = api_instance.api_v1_onboarding_pnp_device_reset_post(request)
+    api_response = api_instance.api_v1_onboarding_pnp_device_reset_post(reset_request)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PnPApi->api_v1_onboarding_pnp_device_reset_post: %s\n" % e)
@@ -731,7 +755,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**ResetRequest**](ResetRequest.md)| request | 
+ **reset_request** | [**ResetRequest**](ResetRequest.md)| request | 
 
 ### Return type
 
@@ -756,6 +780,8 @@ Get Sync Result for Virtual Account
 This API is used to get the device sync info from the given smart account & virtual account with the PnP database. The SAVAMapping object which has the list of devices synced since the last sync is returned in the response.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -799,19 +825,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_onboarding_pnp_device_unclaim_post**
-> UnClaimDeviceResponse api_v1_onboarding_pnp_device_unclaim_post(request)
+> UnClaimDeviceResponse api_v1_onboarding_pnp_device_unclaim_post(unclaim_request)
 
 Un-Claim Device
 
 This API is used to unassign the project and workflow from one or more device.A device can only be unclaimed if it has not begun provisioning.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -827,11 +855,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.PnPApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.UnclaimRequest() # UnclaimRequest | request
+unclaim_request = dnac_api_client.UnclaimRequest() # UnclaimRequest | request
 
 try:
     # Un-Claim Device
-    api_response = api_instance.api_v1_onboarding_pnp_device_unclaim_post(request)
+    api_response = api_instance.api_v1_onboarding_pnp_device_unclaim_post(unclaim_request)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PnPApi->api_v1_onboarding_pnp_device_unclaim_post: %s\n" % e)
@@ -841,7 +869,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**UnclaimRequest**](UnclaimRequest.md)| request | 
+ **unclaim_request** | [**UnclaimRequest**](UnclaimRequest.md)| request | 
 
 ### Return type
 
@@ -859,13 +887,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_onboarding_pnp_device_vacct_sync_post**
-> SyncVirtualAccountDevicesResponse api_v1_onboarding_pnp_device_vacct_sync_post(request)
+> SyncVirtualAccountDevicesResponse api_v1_onboarding_pnp_device_vacct_sync_post(sava_mapping)
 
 Sync Virtual Account Devices
 
 This API is used to sync the device info from the given smart account & virtual account with the PnP database. The list of synced devices is returned in the response.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -881,11 +911,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.PnPApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.SAVAMapping() # SAVAMapping | request
+sava_mapping = dnac_api_client.SAVAMapping() # SAVAMapping | request
 
 try:
     # Sync Virtual Account Devices
-    api_response = api_instance.api_v1_onboarding_pnp_device_vacct_sync_post(request)
+    api_response = api_instance.api_v1_onboarding_pnp_device_vacct_sync_post(sava_mapping)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PnPApi->api_v1_onboarding_pnp_device_vacct_sync_post: %s\n" % e)
@@ -895,7 +925,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SAVAMapping**](SAVAMapping.md)| request | 
+ **sava_mapping** | [**SAVAMapping**](SAVAMapping.md)| request | 
 
 ### Return type
 
@@ -920,6 +950,8 @@ View Settings
 Get this user's list of global PnP settings
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -957,19 +989,21 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_onboarding_pnp_settings_put**
-> UpdateSettingsResponse api_v1_onboarding_pnp_settings_put(request)
+> UpdateSettingsResponse api_v1_onboarding_pnp_settings_put(settings)
 
 Update Settings
 
 Change this user's list of global PnP settings
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -985,11 +1019,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.PnPApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.Settings() # Settings | request
+settings = dnac_api_client.Settings() # Settings | request
 
 try:
     # Update Settings
-    api_response = api_instance.api_v1_onboarding_pnp_settings_put(request)
+    api_response = api_instance.api_v1_onboarding_pnp_settings_put(settings)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PnPApi->api_v1_onboarding_pnp_settings_put: %s\n" % e)
@@ -999,7 +1033,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**Settings**](Settings.md)| request | 
+ **settings** | [**Settings**](Settings.md)| request | 
 
 ### Return type
 
@@ -1024,6 +1058,8 @@ Get Virtual Account List
 This API is used to get list of Virtual Accounts associated with the specified Smart Account. The list of virtual account names is returned in the response.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1065,7 +1101,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1078,6 +1114,8 @@ Get Smart Account List
 This API is used to get list of Smart Accounts. The list of smart account domains is returned in the response.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1115,19 +1153,21 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_onboarding_pnp_settings_savacct_post**
-> AddVirtualAccountResponse api_v1_onboarding_pnp_settings_savacct_post(request)
+> AddVirtualAccountResponse api_v1_onboarding_pnp_settings_savacct_post(sava_mapping)
 
 Add Virtual Account
 
 This API is used to register a Smart Account, Virtual Account and the relevant server profile info with the PnP System & database. The devices present in the registered virtual account are synced with the PnP database as well. The new profile is returned in the response.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1143,11 +1183,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.PnPApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.SAVAMapping() # SAVAMapping | request
+sava_mapping = dnac_api_client.SAVAMapping() # SAVAMapping | request
 
 try:
     # Add Virtual Account
-    api_response = api_instance.api_v1_onboarding_pnp_settings_savacct_post(request)
+    api_response = api_instance.api_v1_onboarding_pnp_settings_savacct_post(sava_mapping)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PnPApi->api_v1_onboarding_pnp_settings_savacct_post: %s\n" % e)
@@ -1157,7 +1197,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SAVAMapping**](SAVAMapping.md)| request | 
+ **sava_mapping** | [**SAVAMapping**](SAVAMapping.md)| request | 
 
 ### Return type
 
@@ -1175,13 +1215,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_onboarding_pnp_settings_savacct_put**
-> EditPnPServerProfileResponse api_v1_onboarding_pnp_settings_savacct_put(request)
+> EditPnPServerProfileResponse api_v1_onboarding_pnp_settings_savacct_put(sava_mapping)
 
 Edit PnP Server Profile
 
 This API is used to edit the PnP Server profile in a registered Virtual Account in the PnP database.The edited smart & virtual account info is returned in the response.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1197,11 +1239,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.PnPApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.SAVAMapping() # SAVAMapping | request
+sava_mapping = dnac_api_client.SAVAMapping() # SAVAMapping | request
 
 try:
     # Edit PnP Server Profile
-    api_response = api_instance.api_v1_onboarding_pnp_settings_savacct_put(request)
+    api_response = api_instance.api_v1_onboarding_pnp_settings_savacct_put(sava_mapping)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PnPApi->api_v1_onboarding_pnp_settings_savacct_put: %s\n" % e)
@@ -1211,7 +1253,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SAVAMapping**](SAVAMapping.md)| request | 
+ **sava_mapping** | [**SAVAMapping**](SAVAMapping.md)| request | 
 
 ### Return type
 
@@ -1236,6 +1278,8 @@ Deregister Virtual Account
 This API is used to deregister the specified smart account & virtual account info and the associated device information from the PnP System & database. The devices associated with the deregistered virtual account are removed from the PnP database as well. The deregistered smart & virtual account info is returned in the response.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1279,7 +1323,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1292,6 +1336,8 @@ Get Workflow Count
 This API is used to get the number of the workflows.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1333,7 +1379,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1346,6 +1392,8 @@ List Workflows
 This API is used to get the list of workflows that match the provided filter. Pagination and sorting are also supported. If a limit is not specified, it will default to return 50 workflows.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1397,7 +1445,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1410,6 +1458,8 @@ Delete Workflow
 Delete a workflow given its id
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1451,7 +1501,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1464,6 +1514,8 @@ Get Workflow
 Get a workflow given its id
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1505,19 +1557,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_onboarding_pnp_workflow_id_put**
-> UpdateWorkflowResponse api_v1_onboarding_pnp_workflow_id_put(request, id)
+> UpdateWorkflowResponse api_v1_onboarding_pnp_workflow_id_put(id, workflow)
 
 Update Workflow
 
 Update an existing workflow
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1533,12 +1587,12 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.PnPApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.Workflow() # Workflow | request
 id = 'id_example' # str | id
+workflow = dnac_api_client.Workflow() # Workflow | request
 
 try:
     # Update Workflow
-    api_response = api_instance.api_v1_onboarding_pnp_workflow_id_put(request, id)
+    api_response = api_instance.api_v1_onboarding_pnp_workflow_id_put(id, workflow)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PnPApi->api_v1_onboarding_pnp_workflow_id_put: %s\n" % e)
@@ -1548,8 +1602,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**Workflow**](Workflow.md)| request | 
  **id** | **str**| id | 
+ **workflow** | [**Workflow**](Workflow.md)| request | 
 
 ### Return type
 
@@ -1567,13 +1621,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_onboarding_pnp_workflow_post**
-> CreateWorkflowResponse api_v1_onboarding_pnp_workflow_post(request)
+> CreateWorkflowResponse api_v1_onboarding_pnp_workflow_post(workflow)
 
 Create Workflow
 
 This API is used to add a PnP Workflow along with the relevant tasks in the workflow into the PnP database.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1589,11 +1645,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.PnPApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.Workflow() # Workflow | request
+workflow = dnac_api_client.Workflow() # Workflow | request
 
 try:
     # Create Workflow
-    api_response = api_instance.api_v1_onboarding_pnp_workflow_post(request)
+    api_response = api_instance.api_v1_onboarding_pnp_workflow_post(workflow)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PnPApi->api_v1_onboarding_pnp_workflow_post: %s\n" % e)
@@ -1603,7 +1659,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**Workflow**](Workflow.md)| request | 
+ **workflow** | [**Workflow**](Workflow.md)| request | 
 
 ### Return type
 

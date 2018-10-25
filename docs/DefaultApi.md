@@ -1,6 +1,6 @@
 # dnac_api_client.DefaultApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -28,6 +28,8 @@ Delete a restore point
 Delete the restore point with given BackupId
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -70,7 +72,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -82,6 +84,8 @@ Configured Backup Destination
 Fetches the configured backup destination
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -120,7 +124,7 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -132,6 +136,8 @@ Backup History
 Fetches the backup history
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -170,7 +176,7 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -182,6 +188,8 @@ Creates a new Backup Point
 Initiates a new backup job
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -224,7 +232,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -236,6 +244,8 @@ Backup Progress
 Fetches the backup progress
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -274,7 +284,7 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -286,6 +296,8 @@ Configured Backup Destination
 Fetches the configured backup destination
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -324,7 +336,7 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -336,6 +348,8 @@ Updates Backup Server details
 Updates the remote backup server details
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -378,7 +392,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -390,6 +404,8 @@ Initiate Restore
 Initiate Restore of given BackupId
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -432,7 +448,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -444,6 +460,8 @@ Returns the Site groups
 Returns the Site groups.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -486,7 +504,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -498,6 +516,8 @@ Returns the Site groups
 Returns the Site groups.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -544,7 +564,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -556,6 +576,8 @@ Deletes a group from DNAC
 Deletes a group from DNAC
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -598,7 +620,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -610,6 +632,8 @@ Fetches a list of configured IP Pools
 Fetches all IP Pools.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -648,7 +672,7 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -660,6 +684,8 @@ Deletes an IP pool to DNAC
 Deletes an IP Pool.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -702,7 +728,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -714,6 +740,8 @@ Adds an IP pool to DNAC
 Creates an IP Pool.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -756,7 +784,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

@@ -1,6 +1,6 @@
 # dnac_api_client.SystemApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,6 +17,8 @@ Downloads a file referred by the fileId
 This method is used to download a file referred by the fileId
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -58,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -71,6 +73,8 @@ Returns list of available namespaces
 This method is used to obtain a list of available namespaces
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -108,7 +112,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -121,6 +125,8 @@ Returns list of files under a specific namespace
 This method is used to obtain a list of files under a specific namespace
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -162,7 +168,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

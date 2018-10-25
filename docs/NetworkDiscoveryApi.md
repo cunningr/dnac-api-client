@@ -1,6 +1,6 @@
 # dnac_api_client.NetworkDiscoveryApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -47,6 +47,8 @@ Retrieves the number of discoveries
 Gets the count of all available discovery jobs
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -84,7 +86,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -97,6 +99,8 @@ Deletes all discovery
 Stops all the discoveries and removes them
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -134,7 +138,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -147,6 +151,8 @@ Retrieve autoComplete values from a discovery based on id
 Gets the autoComplete values from a discovery job
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -202,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -215,6 +221,8 @@ Deletes the discovery specified by id
 Stops the discovery for the given ID and removes it
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -256,7 +264,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -269,6 +277,8 @@ Retrieves the discovery specified by id
 Gets discovery by ID
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -310,7 +320,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -323,6 +333,8 @@ Retrieves list of discovery jobs for the specified discovery id
 Gets the list of discovery jobs for the given id. The result can optionally be filtered based on IP
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -370,7 +382,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -383,6 +395,8 @@ Retrieves the number of network devices discovered in the discovery specified by
 Gets the count of network devices discovered in the given discovery
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -426,7 +440,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -439,6 +453,8 @@ Retrieves the network devices discovered in the discovery specified by id
 Gets the network devices discovered for the given discovery
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -482,7 +498,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -495,6 +511,8 @@ Retrieves the range of network devices discovered for the given discovery
 Gets the network devices discovered for the given discovery and for the given range. The maximum number of records that could be retrieved is 500
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -542,7 +560,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -555,6 +573,8 @@ Retrieve network devices from a discovery on given filters
 Gets the network devices from a discovery job based on given filters
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -614,7 +634,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -627,6 +647,8 @@ Retrieves the list of discovery jobs for the given IP
 Gets the list of discovery jobs for the given IP
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -674,19 +696,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_discovery_post**
-> TaskIdResult api_v1_discovery_post(request)
+> TaskIdResult api_v1_discovery_post(inventory_request)
 
 Starts a new discovery process and returns a task-id
 
 Initiates discovery with the given parameters
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -702,11 +726,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.InventoryRequest() # InventoryRequest | request
+inventory_request = dnac_api_client.InventoryRequest() # InventoryRequest | request
 
 try:
     # Starts a new discovery process and returns a task-id
-    api_response = api_instance.api_v1_discovery_post(request)
+    api_response = api_instance.api_v1_discovery_post(inventory_request)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_discovery_post: %s\n" % e)
@@ -716,7 +740,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**InventoryRequest**](InventoryRequest.md)| request | 
+ **inventory_request** | [**InventoryRequest**](InventoryRequest.md)| request | 
 
 ### Return type
 
@@ -734,13 +758,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_discovery_put**
-> TaskIdResult api_v1_discovery_put(request)
+> TaskIdResult api_v1_discovery_put(discovery_nio)
 
 Updates an existing discovery specified by id - only for starting/stopping the discovery
 
 Stops or starts an existing discovery
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -756,11 +782,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.DiscoveryNIO() # DiscoveryNIO | request
+discovery_nio = dnac_api_client.DiscoveryNIO() # DiscoveryNIO | request
 
 try:
     # Updates an existing discovery specified by id - only for starting/stopping the discovery
-    api_response = api_instance.api_v1_discovery_put(request)
+    api_response = api_instance.api_v1_discovery_put(discovery_nio)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_discovery_put: %s\n" % e)
@@ -770,7 +796,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**DiscoveryNIO**](DiscoveryNIO.md)| request | 
+ **discovery_nio** | [**DiscoveryNIO**](DiscoveryNIO.md)| request | 
 
 ### Return type
 
@@ -795,6 +821,8 @@ Deletes the discovery in the given range
 Stops discovery for the given range and removes them
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -838,7 +866,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -851,6 +879,8 @@ Retrieves the discovery in the given range
 Gets the discovery for the range specified
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -894,19 +924,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_global_credential_cli_post**
-> TaskIdResult api_v1_global_credential_cli_post(request)
+> TaskIdResult api_v1_global_credential_cli_post(request_body)
 
 Creates global CLI credential
 
 This method is used to add global CLI credential
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -922,11 +954,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.CLICredentialDTO() # CLICredentialDTO | request
+request_body = NULL # list[object] | request
 
 try:
     # Creates global CLI credential
-    api_response = api_instance.api_v1_global_credential_cli_post(request)
+    api_response = api_instance.api_v1_global_credential_cli_post(request_body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_global_credential_cli_post: %s\n" % e)
@@ -936,7 +968,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CLICredentialDTO**](CLICredentialDTO.md)| request | 
+ **request_body** | [**list[object]**](list.md)| request | 
 
 ### Return type
 
@@ -954,13 +986,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_global_credential_cli_put**
-> TaskIdResult api_v1_global_credential_cli_put(request)
+> TaskIdResult api_v1_global_credential_cli_put(request_body)
 
 Updates global CLI credential
 
 This method is used to update global CLI credential
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -976,11 +1010,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.CLICredentialDTO() # CLICredentialDTO | request
+request_body = NULL # list[object] | request
 
 try:
     # Updates global CLI credential
-    api_response = api_instance.api_v1_global_credential_cli_put(request)
+    api_response = api_instance.api_v1_global_credential_cli_put(request_body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_global_credential_cli_put: %s\n" % e)
@@ -990,7 +1024,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CLICredentialDTO**](CLICredentialDTO.md)| request | 
+ **request_body** | [**list[object]**](list.md)| request | 
 
 ### Return type
 
@@ -1015,6 +1049,8 @@ Retrieves global credential for the given credential sub type
 This method is used to get global credential for the given credential sub type
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1060,7 +1096,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1073,6 +1109,8 @@ Retrieves global credential by ID
 This method is used to delete global credential for the given ID
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1114,19 +1152,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_global_credential_global_credential_id_put**
-> TaskIdResult api_v1_global_credential_global_credential_id_put(request, global_credential_id)
+> TaskIdResult api_v1_global_credential_global_credential_id_put(global_credential_id, sites_info_dto)
 
 Update global credential for network devices in site(s)
 
 Update global credential for network devices in site(s)
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1142,12 +1182,12 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.SitesInfoDTO() # SitesInfoDTO | request
 global_credential_id = 'global_credential_id_example' # str | Global credential Uuid
+sites_info_dto = dnac_api_client.SitesInfoDTO() # SitesInfoDTO | request
 
 try:
     # Update global credential for network devices in site(s)
-    api_response = api_instance.api_v1_global_credential_global_credential_id_put(request, global_credential_id)
+    api_response = api_instance.api_v1_global_credential_global_credential_id_put(global_credential_id, sites_info_dto)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_global_credential_global_credential_id_put: %s\n" % e)
@@ -1157,8 +1197,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SitesInfoDTO**](SitesInfoDTO.md)| request | 
  **global_credential_id** | **str**| Global credential Uuid | 
+ **sites_info_dto** | [**SitesInfoDTO**](SitesInfoDTO.md)| request | 
 
 ### Return type
 
@@ -1176,13 +1216,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_global_credential_http_read_post**
-> TaskIdResult api_v1_global_credential_http_read_post(request)
+> TaskIdResult api_v1_global_credential_http_read_post(request_body)
 
 Creates global HTTP read credentials
 
 This method is used to add HTTP read credentials
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1198,11 +1240,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.HTTPReadCredentialDTO() # HTTPReadCredentialDTO | request
+request_body = NULL # list[object] | request
 
 try:
     # Creates global HTTP read credentials
-    api_response = api_instance.api_v1_global_credential_http_read_post(request)
+    api_response = api_instance.api_v1_global_credential_http_read_post(request_body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_global_credential_http_read_post: %s\n" % e)
@@ -1212,7 +1254,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**HTTPReadCredentialDTO**](HTTPReadCredentialDTO.md)| request | 
+ **request_body** | [**list[object]**](list.md)| request | 
 
 ### Return type
 
@@ -1230,13 +1272,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_global_credential_http_read_put**
-> TaskIdResult api_v1_global_credential_http_read_put(request)
+> TaskIdResult api_v1_global_credential_http_read_put(request_body)
 
 Updates global HTTP Read credential
 
 This method is used to update global HTTP Read credential
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1252,11 +1296,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.HTTPReadCredentialDTO() # HTTPReadCredentialDTO | request
+request_body = NULL # list[object] | request
 
 try:
     # Updates global HTTP Read credential
-    api_response = api_instance.api_v1_global_credential_http_read_put(request)
+    api_response = api_instance.api_v1_global_credential_http_read_put(request_body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_global_credential_http_read_put: %s\n" % e)
@@ -1266,7 +1310,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**HTTPReadCredentialDTO**](HTTPReadCredentialDTO.md)| request | 
+ **request_body** | [**list[object]**](list.md)| request | 
 
 ### Return type
 
@@ -1284,13 +1328,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_global_credential_http_write_post**
-> TaskIdResult api_v1_global_credential_http_write_post(request)
+> TaskIdResult api_v1_global_credential_http_write_post(http_write_credential_dto)
 
 Creates global HTTP write credentials
 
 This method is used to add global HTTP write credentials
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1306,11 +1352,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.HTTPWriteCredentialDTO() # HTTPWriteCredentialDTO | request
+http_write_credential_dto = dnac_api_client.HTTPWriteCredentialDTO() # HTTPWriteCredentialDTO | request
 
 try:
     # Creates global HTTP write credentials
-    api_response = api_instance.api_v1_global_credential_http_write_post(request)
+    api_response = api_instance.api_v1_global_credential_http_write_post(http_write_credential_dto)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_global_credential_http_write_post: %s\n" % e)
@@ -1320,7 +1366,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**HTTPWriteCredentialDTO**](HTTPWriteCredentialDTO.md)| request | 
+ **http_write_credential_dto** | [**HTTPWriteCredentialDTO**](HTTPWriteCredentialDTO.md)| request | 
 
 ### Return type
 
@@ -1338,13 +1384,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_global_credential_http_write_put**
-> TaskIdResult api_v1_global_credential_http_write_put(request)
+> TaskIdResult api_v1_global_credential_http_write_put(http_write_credential_dto)
 
 Updates global HTTP Write credential
 
 This method is used to update global HTTP Write credential
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1360,11 +1408,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.HTTPWriteCredentialDTO() # HTTPWriteCredentialDTO | request
+http_write_credential_dto = dnac_api_client.HTTPWriteCredentialDTO() # HTTPWriteCredentialDTO | request
 
 try:
     # Updates global HTTP Write credential
-    api_response = api_instance.api_v1_global_credential_http_write_put(request)
+    api_response = api_instance.api_v1_global_credential_http_write_put(http_write_credential_dto)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_global_credential_http_write_put: %s\n" % e)
@@ -1374,7 +1422,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**HTTPWriteCredentialDTO**](HTTPWriteCredentialDTO.md)| request | 
+ **http_write_credential_dto** | [**HTTPWriteCredentialDTO**](HTTPWriteCredentialDTO.md)| request | 
 
 ### Return type
 
@@ -1399,6 +1447,8 @@ Retrieves credential sub type for the given credential Id
 This method is used to get credential sub type for the given Id
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1440,19 +1490,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_global_credential_netconf_post**
-> TaskIdResult api_v1_global_credential_netconf_post(request)
+> TaskIdResult api_v1_global_credential_netconf_post(request_body)
 
 Creates global netconf credential
 
 This method is used to add global netconf credential
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1468,11 +1520,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.NetconfCredentialDTO() # NetconfCredentialDTO | request
+request_body = NULL # list[object] | request
 
 try:
     # Creates global netconf credential
-    api_response = api_instance.api_v1_global_credential_netconf_post(request)
+    api_response = api_instance.api_v1_global_credential_netconf_post(request_body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_global_credential_netconf_post: %s\n" % e)
@@ -1482,7 +1534,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**NetconfCredentialDTO**](NetconfCredentialDTO.md)| request | 
+ **request_body** | [**list[object]**](list.md)| request | 
 
 ### Return type
 
@@ -1500,13 +1552,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_global_credential_netconf_put**
-> TaskIdResult api_v1_global_credential_netconf_put(request)
+> TaskIdResult api_v1_global_credential_netconf_put(request_body)
 
 Updates global netconf credential
 
 This method is used to update global netconf credential
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1522,11 +1576,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.NetconfCredentialDTO() # NetconfCredentialDTO | request
+request_body = NULL # list[object] | request
 
 try:
     # Updates global netconf credential
-    api_response = api_instance.api_v1_global_credential_netconf_put(request)
+    api_response = api_instance.api_v1_global_credential_netconf_put(request_body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_global_credential_netconf_put: %s\n" % e)
@@ -1536,7 +1590,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**NetconfCredentialDTO**](NetconfCredentialDTO.md)| request | 
+ **request_body** | [**list[object]**](list.md)| request | 
 
 ### Return type
 
@@ -1554,13 +1608,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_global_credential_snmpv2_read_community_post**
-> TaskIdResult api_v1_global_credential_snmpv2_read_community_post(request)
+> TaskIdResult api_v1_global_credential_snmpv2_read_community_post(snm_pv_read_community_dto)
 
 Creates global SNMP read community
 
 This method is used to add global SNMP read community
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1576,11 +1632,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.SNMPvReadCommunityDTO() # SNMPvReadCommunityDTO | request
+snm_pv_read_community_dto = dnac_api_client.SNMPvReadCommunityDTO() # SNMPvReadCommunityDTO | request
 
 try:
     # Creates global SNMP read community
-    api_response = api_instance.api_v1_global_credential_snmpv2_read_community_post(request)
+    api_response = api_instance.api_v1_global_credential_snmpv2_read_community_post(snm_pv_read_community_dto)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_global_credential_snmpv2_read_community_post: %s\n" % e)
@@ -1590,7 +1646,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SNMPvReadCommunityDTO**](SNMPvReadCommunityDTO.md)| request | 
+ **snm_pv_read_community_dto** | [**SNMPvReadCommunityDTO**](SNMPvReadCommunityDTO.md)| request | 
 
 ### Return type
 
@@ -1608,13 +1664,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_global_credential_snmpv2_read_community_put**
-> TaskIdResult api_v1_global_credential_snmpv2_read_community_put(request)
+> TaskIdResult api_v1_global_credential_snmpv2_read_community_put(snm_pv_read_community_dto)
 
 Updates global SNMP read community
 
 This method is used to update global SNMP read community
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1630,11 +1688,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.SNMPvReadCommunityDTO() # SNMPvReadCommunityDTO | request
+snm_pv_read_community_dto = dnac_api_client.SNMPvReadCommunityDTO() # SNMPvReadCommunityDTO | request
 
 try:
     # Updates global SNMP read community
-    api_response = api_instance.api_v1_global_credential_snmpv2_read_community_put(request)
+    api_response = api_instance.api_v1_global_credential_snmpv2_read_community_put(snm_pv_read_community_dto)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_global_credential_snmpv2_read_community_put: %s\n" % e)
@@ -1644,7 +1702,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SNMPvReadCommunityDTO**](SNMPvReadCommunityDTO.md)| request | 
+ **snm_pv_read_community_dto** | [**SNMPvReadCommunityDTO**](SNMPvReadCommunityDTO.md)| request | 
 
 ### Return type
 
@@ -1662,13 +1720,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_global_credential_snmpv2_write_community_post**
-> TaskIdResult api_v1_global_credential_snmpv2_write_community_post(request)
+> TaskIdResult api_v1_global_credential_snmpv2_write_community_post(request_body)
 
 Creates global SNMP write community
 
 This method is used to add global SNMP write community
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1684,11 +1744,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.SNMPvWriteCommunityDTO() # SNMPvWriteCommunityDTO | request
+request_body = NULL # list[object] | request
 
 try:
     # Creates global SNMP write community
-    api_response = api_instance.api_v1_global_credential_snmpv2_write_community_post(request)
+    api_response = api_instance.api_v1_global_credential_snmpv2_write_community_post(request_body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_global_credential_snmpv2_write_community_post: %s\n" % e)
@@ -1698,7 +1758,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SNMPvWriteCommunityDTO**](SNMPvWriteCommunityDTO.md)| request | 
+ **request_body** | [**list[object]**](list.md)| request | 
 
 ### Return type
 
@@ -1716,13 +1776,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_global_credential_snmpv2_write_community_put**
-> TaskIdResult api_v1_global_credential_snmpv2_write_community_put(request)
+> TaskIdResult api_v1_global_credential_snmpv2_write_community_put(request_body)
 
 Updates global SNMP write community
 
 This method is used to update global SNMP write community
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1738,11 +1800,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.SNMPvWriteCommunityDTO() # SNMPvWriteCommunityDTO | request
+request_body = NULL # list[object] | request
 
 try:
     # Updates global SNMP write community
-    api_response = api_instance.api_v1_global_credential_snmpv2_write_community_put(request)
+    api_response = api_instance.api_v1_global_credential_snmpv2_write_community_put(request_body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_global_credential_snmpv2_write_community_put: %s\n" % e)
@@ -1752,7 +1814,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SNMPvWriteCommunityDTO**](SNMPvWriteCommunityDTO.md)| request | 
+ **request_body** | [**list[object]**](list.md)| request | 
 
 ### Return type
 
@@ -1770,13 +1832,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_global_credential_snmpv3_post**
-> TaskIdResult api_v1_global_credential_snmpv3_post(request)
+> TaskIdResult api_v1_global_credential_snmpv3_post(request_body)
 
 Creates global SNMPv3 credential
 
 This method is used to add global SNMPv3 credential
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1792,11 +1856,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.SNMPvCredentialDTO() # SNMPvCredentialDTO | request
+request_body = NULL # list[object] | request
 
 try:
     # Creates global SNMPv3 credential
-    api_response = api_instance.api_v1_global_credential_snmpv3_post(request)
+    api_response = api_instance.api_v1_global_credential_snmpv3_post(request_body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_global_credential_snmpv3_post: %s\n" % e)
@@ -1806,7 +1870,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SNMPvCredentialDTO**](SNMPvCredentialDTO.md)| request | 
+ **request_body** | [**list[object]**](list.md)| request | 
 
 ### Return type
 
@@ -1824,13 +1888,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_global_credential_snmpv3_put**
-> TaskIdResult api_v1_global_credential_snmpv3_put(request)
+> TaskIdResult api_v1_global_credential_snmpv3_put(request_body)
 
 Updates global SNMPv3 credential
 
 This method is used to update global SNMPv3 credential
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1846,11 +1912,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDiscoveryApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.SNMPvCredentialDTO() # SNMPvCredentialDTO | request
+request_body = NULL # list[object] | request
 
 try:
     # Updates global SNMPv3 credential
-    api_response = api_instance.api_v1_global_credential_snmpv3_put(request)
+    api_response = api_instance.api_v1_global_credential_snmpv3_put(request_body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDiscoveryApi->api_v1_global_credential_snmpv3_put: %s\n" % e)
@@ -1860,7 +1926,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SNMPvCredentialDTO**](SNMPvCredentialDTO.md)| request | 
+ **request_body** | [**list[object]**](list.md)| request | 
 
 ### Return type
 

@@ -1,6 +1,6 @@
 # dnac_api_client.IntentWLCApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,13 +9,15 @@ Method | HTTP request | Description
 
 
 # **dna_intent_api_v1_create_ssid_post**
-> CreateSSIDResponse dna_intent_api_v1_create_ssid_post(request, runsync=runsync, timeout=timeout)
+> CreateSSIDResponse dna_intent_api_v1_create_ssid_post(create_ssid_request, runsync=runsync, timeout=timeout)
 
 Create SSID
 
 Creates non fabric enterprise SSID, dynamic interface, Wireless Network Profile and provisions WLC and AP
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -31,13 +33,13 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.IntentWLCApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.CreateSSIDRequest() # CreateSSIDRequest | request
-runsync = false # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to false)
-timeout = 10 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10)
+create_ssid_request = dnac_api_client.CreateSSIDRequest() # CreateSSIDRequest | request
+runsync = False # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to False)
+timeout = 10.0 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10.0)
 
 try:
     # Create SSID
-    api_response = api_instance.dna_intent_api_v1_create_ssid_post(request, runsync=runsync, timeout=timeout)
+    api_response = api_instance.dna_intent_api_v1_create_ssid_post(create_ssid_request, runsync=runsync, timeout=timeout)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling IntentWLCApi->dna_intent_api_v1_create_ssid_post: %s\n" % e)
@@ -47,9 +49,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CreateSSIDRequest**](CreateSSIDRequest.md)| request | 
- **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to false]
- **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10]
+ **create_ssid_request** | [**CreateSSIDRequest**](CreateSSIDRequest.md)| request | 
+ **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to False]
+ **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10.0]
 
 ### Return type
 
@@ -74,6 +76,8 @@ Delete SSID
 De-provision WLC, also removes wireless network profile, SSID and dynamic interface
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -93,8 +97,8 @@ device_name = 'device_name_example' # str |
 wireless_network_profile_name = 'wireless_network_profile_name_example' # str | 
 ssid_name = 'ssid_name_example' # str | 
 interface_name = 'interface_name_example' # str | 
-runsync = false # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to false)
-timeout = 10 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10)
+runsync = False # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to False)
+timeout = 10.0 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10.0)
 
 try:
     # Delete SSID
@@ -112,8 +116,8 @@ Name | Type | Description  | Notes
  **wireless_network_profile_name** | **str**|  | 
  **ssid_name** | **str**|  | 
  **interface_name** | **str**|  | 
- **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to false]
- **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10]
+ **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to False]
+ **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10.0]
 
 ### Return type
 
@@ -125,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

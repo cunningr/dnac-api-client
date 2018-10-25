@@ -1,6 +1,6 @@
 # dnac_api_client.TemplateProgrammmerApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -28,6 +28,8 @@ Gets a list of projects
 List the projects
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -69,19 +71,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_template_programmer_project_post**
-> TaskIdResult api_v1_template_programmer_project_post(request)
+> TaskIdResult api_v1_template_programmer_project_post(project_dto)
 
 Create Project
 
 This API is used to create a new project.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -97,11 +101,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.TemplateProgrammmerApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.ProjectDTO() # ProjectDTO | request
+project_dto = dnac_api_client.ProjectDTO() # ProjectDTO | request
 
 try:
     # Create Project
-    api_response = api_instance.api_v1_template_programmer_project_post(request)
+    api_response = api_instance.api_v1_template_programmer_project_post(project_dto)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TemplateProgrammmerApi->api_v1_template_programmer_project_post: %s\n" % e)
@@ -111,7 +115,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**ProjectDTO**](ProjectDTO.md)| request | 
+ **project_dto** | [**ProjectDTO**](ProjectDTO.md)| request | 
 
 ### Return type
 
@@ -136,6 +140,8 @@ Deletes the project
 Deletes the project
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -177,19 +183,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_template_programmer_project_project_id_template_post**
-> TaskIdResult api_v1_template_programmer_project_project_id_template_post(request, project_id)
+> TaskIdResult api_v1_template_programmer_project_project_id_template_post(project_id, template_dto)
 
 Create Template
 
 API to create a template.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -205,12 +213,12 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.TemplateProgrammmerApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.TemplateDTO() # TemplateDTO | request
 project_id = 'project_id_example' # str | projectId
+template_dto = dnac_api_client.TemplateDTO() # TemplateDTO | request
 
 try:
     # Create Template
-    api_response = api_instance.api_v1_template_programmer_project_project_id_template_post(request, project_id)
+    api_response = api_instance.api_v1_template_programmer_project_project_id_template_post(project_id, template_dto)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TemplateProgrammmerApi->api_v1_template_programmer_project_project_id_template_post: %s\n" % e)
@@ -220,8 +228,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**TemplateDTO**](TemplateDTO.md)| request | 
  **project_id** | **str**| projectId | 
+ **template_dto** | [**TemplateDTO**](TemplateDTO.md)| request | 
 
 ### Return type
 
@@ -239,13 +247,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_template_programmer_project_put**
-> TaskIdResult api_v1_template_programmer_project_put(request)
+> TaskIdResult api_v1_template_programmer_project_put(project_dto)
 
 Update Project
 
 This API is used to update an existing project.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -261,11 +271,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.TemplateProgrammmerApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.ProjectDTO() # ProjectDTO | request
+project_dto = dnac_api_client.ProjectDTO() # ProjectDTO | request
 
 try:
     # Update Project
-    api_response = api_instance.api_v1_template_programmer_project_put(request)
+    api_response = api_instance.api_v1_template_programmer_project_put(project_dto)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TemplateProgrammmerApi->api_v1_template_programmer_project_put: %s\n" % e)
@@ -275,7 +285,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**ProjectDTO**](ProjectDTO.md)| request | 
+ **project_dto** | [**ProjectDTO**](ProjectDTO.md)| request | 
 
 ### Return type
 
@@ -293,13 +303,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_template_programmer_template_deploy_post**
-> TemplateDeploymentStatusDTO api_v1_template_programmer_template_deploy_post(request)
+> TemplateDeploymentStatusDTO api_v1_template_programmer_template_deploy_post(template_deployment_info)
 
 Deploy Template
 
 API to deploy a template.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -315,11 +327,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.TemplateProgrammmerApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.TemplateDeploymentInfo() # TemplateDeploymentInfo | request
+template_deployment_info = dnac_api_client.TemplateDeploymentInfo() # TemplateDeploymentInfo | request
 
 try:
     # Deploy Template
-    api_response = api_instance.api_v1_template_programmer_template_deploy_post(request)
+    api_response = api_instance.api_v1_template_programmer_template_deploy_post(template_deployment_info)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TemplateProgrammmerApi->api_v1_template_programmer_template_deploy_post: %s\n" % e)
@@ -329,7 +341,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**TemplateDeploymentInfo**](TemplateDeploymentInfo.md)| request | 
+ **template_deployment_info** | [**TemplateDeploymentInfo**](TemplateDeploymentInfo.md)| request | 
 
 ### Return type
 
@@ -354,6 +366,8 @@ Status of template deployment
 API to retrieve the status of template deployment.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -395,7 +409,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -408,6 +422,8 @@ Gets the templates available depending on the criteria
 Gets the templates available depending on the criteria
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -429,8 +445,8 @@ software_version = 'software_version_example' # str | softwareVersion (optional)
 product_family = 'product_family_example' # str | productFamily (optional)
 product_series = 'product_series_example' # str | productSeries (optional)
 product_type = 'product_type_example' # str | productType (optional)
-include_head = true # bool | includeHead (optional)
-filter_conflicting_templates = true # bool | filterConflictingTemplates (optional)
+include_head = True # bool | includeHead (optional)
+filter_conflicting_templates = True # bool | filterConflictingTemplates (optional)
 
 try:
     # Gets the templates available depending on the criteria
@@ -463,19 +479,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_template_programmer_template_preview_put**
-> TemplatePreviewResponseDTO api_v1_template_programmer_template_preview_put(request)
+> TemplatePreviewResponseDTO api_v1_template_programmer_template_preview_put(template_preview_request_dto)
 
 Preview Template
 
 API to preview a template.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -491,11 +509,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.TemplateProgrammmerApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.TemplatePreviewRequestDTO() # TemplatePreviewRequestDTO | request
+template_preview_request_dto = dnac_api_client.TemplatePreviewRequestDTO() # TemplatePreviewRequestDTO | request
 
 try:
     # Preview Template
-    api_response = api_instance.api_v1_template_programmer_template_preview_put(request)
+    api_response = api_instance.api_v1_template_programmer_template_preview_put(template_preview_request_dto)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TemplateProgrammmerApi->api_v1_template_programmer_template_preview_put: %s\n" % e)
@@ -505,7 +523,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**TemplatePreviewRequestDTO**](TemplatePreviewRequestDTO.md)| request | 
+ **template_preview_request_dto** | [**TemplatePreviewRequestDTO**](TemplatePreviewRequestDTO.md)| request | 
 
 ### Return type
 
@@ -523,13 +541,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_template_programmer_template_put**
-> TaskIdResult api_v1_template_programmer_template_put(request)
+> TaskIdResult api_v1_template_programmer_template_put(template_dto)
 
 Update Template
 
 API to update a template.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -545,11 +565,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.TemplateProgrammmerApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.TemplateDTO() # TemplateDTO | request
+template_dto = dnac_api_client.TemplateDTO() # TemplateDTO | request
 
 try:
     # Update Template
-    api_response = api_instance.api_v1_template_programmer_template_put(request)
+    api_response = api_instance.api_v1_template_programmer_template_put(template_dto)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TemplateProgrammmerApi->api_v1_template_programmer_template_put: %s\n" % e)
@@ -559,7 +579,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**TemplateDTO**](TemplateDTO.md)| request | 
+ **template_dto** | [**TemplateDTO**](TemplateDTO.md)| request | 
 
 ### Return type
 
@@ -584,6 +604,8 @@ Deletes the template
 Deletes the template
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -625,7 +647,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -638,6 +660,8 @@ Gets details of a given template
 Details of the template
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -679,19 +703,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_template_programmer_template_version_post**
-> TaskIdResult api_v1_template_programmer_template_version_post(request)
+> TaskIdResult api_v1_template_programmer_template_version_post(template_version_request_dto)
 
 Version Template
 
 API to version the current contents of the template.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -707,11 +733,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.TemplateProgrammmerApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.TemplateVersionRequestDTO() # TemplateVersionRequestDTO | request
+template_version_request_dto = dnac_api_client.TemplateVersionRequestDTO() # TemplateVersionRequestDTO | request
 
 try:
     # Version Template
-    api_response = api_instance.api_v1_template_programmer_template_version_post(request)
+    api_response = api_instance.api_v1_template_programmer_template_version_post(template_version_request_dto)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TemplateProgrammmerApi->api_v1_template_programmer_template_version_post: %s\n" % e)
@@ -721,7 +747,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**TemplateVersionRequestDTO**](TemplateVersionRequestDTO.md)| request | 
+ **template_version_request_dto** | [**TemplateVersionRequestDTO**](TemplateVersionRequestDTO.md)| request | 
 
 ### Return type
 
@@ -746,6 +772,8 @@ Gets all the versions of a given template
 Get all the versions of template
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -787,7 +815,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -1,6 +1,6 @@
 # dnac_api_client.IntentSitesApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,6 +15,8 @@ Site Hierarchy
 Site Hierarchy along with health Info
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -30,9 +32,9 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.IntentSitesApi(dnac_api_client.ApiClient(configuration))
-timestamp = '' # str | Timestamp  (default to )
-runsync = false # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to false)
-timeout = 10 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10)
+timestamp = 'timestamp_example' # str | Timestamp 
+runsync = False # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to False)
+timeout = 10.0 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10.0)
 
 try:
     # Site Hierarchy
@@ -46,9 +48,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **timestamp** | **str**| Timestamp  | [default to ]
- **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to false]
- **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10]
+ **timestamp** | **str**| Timestamp  | 
+ **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to False]
+ **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10.0]
 
 ### Return type
 
@@ -60,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

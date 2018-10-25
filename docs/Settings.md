@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **str** |  | [optional] 
-**aaa_credentials** | [**DeviceInnerDeviceInfoAaaCredentials**](DeviceInnerDeviceInfoAaaCredentials.md) |  | [optional] 
+**aaa_credentials** | [**SettingsAaaCredentials**](SettingsAaaCredentials.md) |  | [optional] 
 **accept_eula** | **bool** |  | [optional] 
 **default_profile** | [**SettingsDefaultProfile**](SettingsDefaultProfile.md) |  | [optional] 
 **sava_mapping_list** | [**list[SettingsSavaMappingList]**](SettingsSavaMappingList.md) |  | [optional] 

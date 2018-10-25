@@ -1,6 +1,6 @@
 # dnac_api_client.NetworkDeviceApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -55,6 +55,8 @@ Retrieves interface count
 Gets the count of interfaces for all devices
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -92,7 +94,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -105,6 +107,8 @@ Retrieves all interfaces
 Gets all available interfaces with a maximum limit of 500
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -142,7 +146,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -155,6 +159,8 @@ Retrieves interface by ID
 Gets the interface for the given interface ID
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -196,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -209,6 +215,8 @@ Retrieves interfaces by IP address
 Gets list of interfaces with the given IP address
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -250,7 +258,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -263,6 +271,8 @@ Retrieves ISIS interfaces
 Gets the interfaces that has ISIS enabled
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -300,7 +310,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -313,6 +323,8 @@ Retrieves device interface count
 Gets the interface count for the given device
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -354,7 +366,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -367,6 +379,8 @@ Retrieves device interfaces
 Gets list of interfaces for the given device
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -408,7 +422,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -421,6 +435,8 @@ Retrieves interface for the given device and interface name
 Gets the interface for the given device ID and for the given interface name
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -464,7 +480,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -477,6 +493,8 @@ Retrieves device interfaces in the given range
 Gets the list of interfaces for the device for the specified range
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -522,7 +540,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -535,6 +553,8 @@ Retrieves OSPF interfaces
 Gets the interfaces that has OSPF enabled
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -572,7 +592,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -585,6 +605,8 @@ Retrieves all network devices
 Gets the list of first 500 network devices sorted lexicographically based on host name. It can be filtered using management IP address, mac address, hostname and location name. If id param is provided, it will be returning the list of network-devices for the given id's and other request params will be ignored. In case of autocomplete request, returns the list of specified attributes.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -668,19 +690,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_network_device_brief_put**
-> TaskIdResult api_v1_network_device_brief_put(request)
+> TaskIdResult api_v1_network_device_brief_put(network_device_brief_nio)
 
 Updates network device role
 
 Updates the role of the device as access, core, distribution, border router
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -696,11 +720,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDeviceApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.NetworkDeviceBriefNIO() # NetworkDeviceBriefNIO | request
+network_device_brief_nio = dnac_api_client.NetworkDeviceBriefNIO() # NetworkDeviceBriefNIO | request
 
 try:
     # Updates network device role
-    api_response = api_instance.api_v1_network_device_brief_put(request)
+    api_response = api_instance.api_v1_network_device_brief_put(network_device_brief_nio)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDeviceApi->api_v1_network_device_brief_put: %s\n" % e)
@@ -710,7 +734,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**NetworkDeviceBriefNIO**](NetworkDeviceBriefNIO.md)| request | 
+ **network_device_brief_nio** | [**NetworkDeviceBriefNIO**](NetworkDeviceBriefNIO.md)| request | 
 
 ### Return type
 
@@ -735,6 +759,8 @@ Retrieves the collection interval of all devices
 Retrieves collection interval of all devices
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -772,7 +798,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -785,6 +811,8 @@ Retrieves config count
 Gets the count of device configs
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -822,7 +850,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -835,6 +863,8 @@ Retrieves device config list
 Gets the config for all devices
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -872,7 +902,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -885,6 +915,8 @@ Retrieves network device count
 Gets the count of network devices filtered by management IP address, mac address, hostname and location name
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -922,19 +954,21 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_network_device_file_post**
-> TaskIdResult api_v1_network_device_file_post(request)
+> TaskIdResult api_v1_network_device_file_post(export_device_dto)
 
 Export network-device to file
 
 Export the selected network-device to a file
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -950,11 +984,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDeviceApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.ExportDeviceDTO() # ExportDeviceDTO | request
+export_device_dto = dnac_api_client.ExportDeviceDTO() # ExportDeviceDTO | request
 
 try:
     # Export network-device to file
-    api_response = api_instance.api_v1_network_device_file_post(request)
+    api_response = api_instance.api_v1_network_device_file_post(export_device_dto)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDeviceApi->api_v1_network_device_file_post: %s\n" % e)
@@ -964,7 +998,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**ExportDeviceDTO**](ExportDeviceDTO.md)| request | 
+ **export_device_dto** | [**ExportDeviceDTO**](ExportDeviceDTO.md)| request | 
 
 ### Return type
 
@@ -989,6 +1023,8 @@ Retrieve the values of given fields
 Gets the field values based on given filter
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1030,7 +1066,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1043,6 +1079,8 @@ Retrieves all functional-capability of devices
 Gets the functional-capability for given devices
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1086,7 +1124,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1099,6 +1137,8 @@ Gets the functional capability by id
 Retrieve functional capability with given id
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1140,7 +1180,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1153,6 +1193,8 @@ Retrieves all network devices
 Gets the list of first 500 network devices sorted lexicographically based on host name. It can be filtered using management IP address, mac address, hostname and location name. If id param is provided, it will be returning the list of network-devices for the given id's and other request params will be ignored. In case of autocomplete request, returns the list of specified attributes.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1254,7 +1296,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1267,6 +1309,8 @@ Retrieves network device brief by ID
 Gets brief network device info such as hostname, management IP address for the given device ID
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1308,7 +1352,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1321,6 +1365,8 @@ Retrieves the collection interval specified by device ID
 Retrieves collection interval by device id
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1362,7 +1408,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1375,6 +1421,8 @@ Delete network device by ID
 Removes the network device for the given ID
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1391,7 +1439,7 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDeviceApi(dnac_api_client.ApiClient(configuration))
 id = 'id_example' # str | Device ID
-is_force_delete = true # bool | isForceDelete (optional)
+is_force_delete = True # bool | isForceDelete (optional)
 
 try:
     # Delete network device by ID
@@ -1418,7 +1466,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1431,6 +1479,8 @@ Retrieves network device by ID
 Gets the network device for the given device ID
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1472,7 +1522,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1485,6 +1535,8 @@ Get the organizations chosen while adding the meraki dashboard
 This method is used to get the selected organizations for the meraki dashboard
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1526,7 +1578,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1539,6 +1591,8 @@ Retrieves list of VLAN data that are associated with interface for a device
 getDeviceVLANData
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1582,7 +1636,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1595,6 +1649,8 @@ Retrieves wireless lan conrtoller info by Device ID
 Gets the wireless lan controller info using the given device ID
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1636,7 +1692,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1649,6 +1705,8 @@ Retrieves network device by IP address
 Gets the network device with the given IP address
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1690,7 +1748,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1703,6 +1761,8 @@ Gives total number of Modules
 Get Module Count
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1752,7 +1812,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1765,6 +1825,8 @@ Gives all the modules associated with given device id
 Get modules of the given device id
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1818,7 +1880,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1831,6 +1893,8 @@ Gives Module info by its id
 Get module by id
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1872,7 +1936,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1885,6 +1949,8 @@ Retrieves device config
 Gets the device config by device ID
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1926,19 +1992,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_network_device_post**
-> TaskIdResult api_v1_network_device_post(request)
+> TaskIdResult api_v1_network_device_post(inventory_device_info)
 
 Network device POST api
 
 Adds the device with given credential
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -1954,11 +2022,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDeviceApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.InventoryDeviceInfo() # InventoryDeviceInfo | request
+inventory_device_info = dnac_api_client.InventoryDeviceInfo() # InventoryDeviceInfo | request
 
 try:
     # Network device POST api
-    api_response = api_instance.api_v1_network_device_post(request)
+    api_response = api_instance.api_v1_network_device_post(inventory_device_info)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDeviceApi->api_v1_network_device_post: %s\n" % e)
@@ -1968,7 +2036,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**InventoryDeviceInfo**](InventoryDeviceInfo.md)| request | 
+ **inventory_device_info** | [**InventoryDeviceInfo**](InventoryDeviceInfo.md)| request | 
 
 ### Return type
 
@@ -1986,13 +2054,15 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_network_device_put**
-> TaskIdResult api_v1_network_device_put(request)
+> TaskIdResult api_v1_network_device_put(inventory_device_info)
 
 Network device sync api
 
 Sync the devices provided as input
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -2008,11 +2078,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDeviceApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.InventoryDeviceInfo() # InventoryDeviceInfo | request
+inventory_device_info = dnac_api_client.InventoryDeviceInfo() # InventoryDeviceInfo | request
 
 try:
     # Network device sync api
-    api_response = api_instance.api_v1_network_device_put(request)
+    api_response = api_instance.api_v1_network_device_put(inventory_device_info)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDeviceApi->api_v1_network_device_put: %s\n" % e)
@@ -2022,7 +2092,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**InventoryDeviceInfo**](InventoryDeviceInfo.md)| request | 
+ **inventory_device_info** | [**InventoryDeviceInfo**](InventoryDeviceInfo.md)| request | 
 
 ### Return type
 
@@ -2047,6 +2117,8 @@ Retrieves network device by serial number
 Gets the network device with the given serial number
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -2088,7 +2160,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2101,6 +2173,8 @@ Retrieves network device by range
 Gets the list of network devices for the given range
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -2144,19 +2218,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_network_device_sync_put**
-> TaskIdResult api_v1_network_device_sync_put(request, force_sync=force_sync)
+> TaskIdResult api_v1_network_device_sync_put(request_body, force_sync=force_sync)
 
 Network device sync api
 
 Sync's the devices. If forceSync param is false (default) then the sync would run in normal priority thread. If forceSync param is true then the sync would run in high priority thread if avaiable, else the sync will fail. Result can be seen in the child task of each device
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -2172,12 +2248,12 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDeviceApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.NetworkDeviceSyncApiRequest() # NetworkDeviceSyncApiRequest | request
-force_sync = true # bool | forceSync (optional)
+request_body = NULL # list[object] | request
+force_sync = True # bool | forceSync (optional)
 
 try:
     # Network device sync api
-    api_response = api_instance.api_v1_network_device_sync_put(request, force_sync=force_sync)
+    api_response = api_instance.api_v1_network_device_sync_put(request_body, force_sync=force_sync)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDeviceApi->api_v1_network_device_sync_put: %s\n" % e)
@@ -2187,7 +2263,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**NetworkDeviceSyncApiRequest**](NetworkDeviceSyncApiRequest.md)| request | 
+ **request_body** | [**list[object]**](list.md)| request | 
  **force_sync** | **bool**| forceSync | [optional] 
 
 ### Return type
@@ -2213,6 +2289,8 @@ Updates certificate validation status and returns tenantId
 Registers a device for WSA notification
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -2256,7 +2334,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2269,6 +2347,8 @@ Retrieves SNMP properties
 This method is used to get SNMP properties
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -2306,19 +2386,21 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_snmp_property_post**
-> TaskIdResult api_v1_snmp_property_post(request)
+> TaskIdResult api_v1_snmp_property_post(request_body)
 
 Creates or updates SNMP properties
 
 This method is used to add SNMP properties
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -2334,11 +2416,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.NetworkDeviceApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.SystemPropertyNameAndIntValueDTO() # SystemPropertyNameAndIntValueDTO | request
+request_body = NULL # list[object] | request
 
 try:
     # Creates or updates SNMP properties
-    api_response = api_instance.api_v1_snmp_property_post(request)
+    api_response = api_instance.api_v1_snmp_property_post(request_body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NetworkDeviceApi->api_v1_snmp_property_post: %s\n" % e)
@@ -2348,7 +2430,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SystemPropertyNameAndIntValueDTO**](SystemPropertyNameAndIntValueDTO.md)| request | 
+ **request_body** | [**list[object]**](list.md)| request | 
 
 ### Return type
 

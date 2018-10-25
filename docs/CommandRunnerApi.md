@@ -1,6 +1,6 @@
 # dnac_api_client.CommandRunnerApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,6 +16,8 @@ Get all keywords of CLIs accepted by command runner
 Get valid keywords
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -53,19 +55,21 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_network_device_poller_cli_read_request_post**
-> TaskIdResult api_v1_network_device_poller_cli_read_request_post(request)
+> TaskIdResult api_v1_network_device_poller_cli_read_request_post(command_runner_dto)
 
 Run read-only commands on devices to get their real-time configuration
 
 Submit request for read-only CLIs
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -81,11 +85,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.CommandRunnerApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.CommandRunnerDTO() # CommandRunnerDTO | request
+command_runner_dto = dnac_api_client.CommandRunnerDTO() # CommandRunnerDTO | request
 
 try:
     # Run read-only commands on devices to get their real-time configuration
-    api_response = api_instance.api_v1_network_device_poller_cli_read_request_post(request)
+    api_response = api_instance.api_v1_network_device_poller_cli_read_request_post(command_runner_dto)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CommandRunnerApi->api_v1_network_device_poller_cli_read_request_post: %s\n" % e)
@@ -95,7 +99,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CommandRunnerDTO**](CommandRunnerDTO.md)| request | 
+ **command_runner_dto** | [**CommandRunnerDTO**](CommandRunnerDTO.md)| request | 
 
 ### Return type
 

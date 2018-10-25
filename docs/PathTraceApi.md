@@ -1,6 +1,6 @@
 # dnac_api_client.PathTraceApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,6 +18,8 @@ Deletes a flow analysis request
 Deletes a flow analysis request by its id
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -59,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -72,6 +74,8 @@ Retrieves result of a previously requested flow analysis
 Retrieves result of a previously requested flow analysis by its Flow Analysis id
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -113,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -126,6 +130,8 @@ Retrieves a summary of all flow analyses stored
 Retrieves a summary of all flow analyses stored. Filters the results by given parameters.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -141,7 +147,7 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.PathTraceApi(dnac_api_client.ApiClient(configuration))
-periodic_refresh = true # bool | Is analysis periodically refreshed? (optional)
+periodic_refresh = True # bool | Is analysis periodically refreshed? (optional)
 source_ip = 'source_ip_example' # str | Source IP address (optional)
 dest_ip = 'dest_ip_example' # str | Destination IP adress (optional)
 source_port = 'source_port_example' # str | Source port (optional)
@@ -195,19 +201,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_flow_analysis_post**
-> FlowAnalysisRequestResultOutput api_v1_flow_analysis_post(request)
+> FlowAnalysisRequestResultOutput api_v1_flow_analysis_post(flow_analysis_request)
 
 Initiates a new flow analysis
 
 Initiates a new flow analysis with periodic refresh and stat collection options. Returns a request id and a task id to get results and follow progress.
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -223,11 +231,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.PathTraceApi(dnac_api_client.ApiClient(configuration))
-request = dnac_api_client.FlowAnalysisRequest() # FlowAnalysisRequest | request
+flow_analysis_request = dnac_api_client.FlowAnalysisRequest() # FlowAnalysisRequest | request
 
 try:
     # Initiates a new flow analysis
-    api_response = api_instance.api_v1_flow_analysis_post(request)
+    api_response = api_instance.api_v1_flow_analysis_post(flow_analysis_request)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PathTraceApi->api_v1_flow_analysis_post: %s\n" % e)
@@ -237,7 +245,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**FlowAnalysisRequest**](FlowAnalysisRequest.md)| request | 
+ **flow_analysis_request** | [**FlowAnalysisRequest**](FlowAnalysisRequest.md)| request | 
 
 ### Return type
 

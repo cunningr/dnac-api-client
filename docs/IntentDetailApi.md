@@ -1,6 +1,6 @@
 # dnac_api_client.IntentDetailApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,6 +16,8 @@ Client Detail
 Get Client Details for a single client
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -31,10 +33,10 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.IntentDetailApi(dnac_api_client.ApiClient(configuration))
-timestamp = '' # str | timestamp (default to )
-mac_address = '' # str | MAC Address of the client (default to )
-runsync = false # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to false)
-timeout = 10 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10)
+timestamp = 'timestamp_example' # str | timestamp
+mac_address = 'mac_address_example' # str | MAC Address of the client
+runsync = False # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to False)
+timeout = 10.0 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10.0)
 
 try:
     # Client Detail
@@ -48,10 +50,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **timestamp** | **str**| timestamp | [default to ]
- **mac_address** | **str**| MAC Address of the client | [default to ]
- **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to false]
- **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10]
+ **timestamp** | **str**| timestamp | 
+ **mac_address** | **str**| MAC Address of the client | 
+ **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to False]
+ **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10.0]
 
 ### Return type
 
@@ -63,7 +65,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -76,6 +78,8 @@ Network Device Detail
 Get Network Device Detail
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -91,11 +95,11 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.IntentDetailApi(dnac_api_client.ApiClient(configuration))
-runsync = false # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to false)
-timeout = 10 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10)
-timestamp = '' # str | timestamp (optional) (default to )
-search_by = '' # str | MAC Address or UUID or Name of the Device (optional) (default to )
-identifier = '' # str | macAddress or uuid or nwDeviceName (optional) (default to )
+runsync = False # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to False)
+timeout = 10.0 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10.0)
+timestamp = 'timestamp_example' # str | timestamp (optional)
+search_by = 'search_by_example' # str | MAC Address or UUID or Name of the Device (optional)
+identifier = 'identifier_example' # str | macAddress or uuid or nwDeviceName (optional)
 
 try:
     # Network Device Detail
@@ -109,11 +113,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to false]
- **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10]
- **timestamp** | **str**| timestamp | [optional] [default to ]
- **search_by** | **str**| MAC Address or UUID or Name of the Device | [optional] [default to ]
- **identifier** | **str**| macAddress or uuid or nwDeviceName | [optional] [default to ]
+ **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to False]
+ **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10.0]
+ **timestamp** | **str**| timestamp | [optional] 
+ **search_by** | **str**| MAC Address or UUID or Name of the Device | [optional] 
+ **identifier** | **str**| macAddress or uuid or nwDeviceName | [optional] 
 
 ### Return type
 
@@ -125,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

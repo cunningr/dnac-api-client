@@ -1,6 +1,6 @@
 # dnac_api_client.IntentHealthApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,6 +17,8 @@ Client Health
 Get overall Client Health along with beak down on categories of wired and wireless
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -32,10 +34,10 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.IntentHealthApi(dnac_api_client.ApiClient(configuration))
-start_time = '' # str | Start Time (default to )
-end_time = '' # str | End Time (default to )
-runsync = false # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to false)
-timeout = 10 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10)
+start_time = 'start_time_example' # str | Start Time
+end_time = 'end_time_example' # str | End Time
+runsync = False # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to False)
+timeout = 10.0 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10.0)
 
 try:
     # Client Health
@@ -49,10 +51,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **start_time** | **str**| Start Time | [default to ]
- **end_time** | **str**| End Time | [default to ]
- **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to false]
- **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10]
+ **start_time** | **str**| Start Time | 
+ **end_time** | **str**| End Time | 
+ **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to False]
+ **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10.0]
 
 ### Return type
 
@@ -64,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -77,6 +79,8 @@ Network Health
 Network Devices and their health by category
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -92,10 +96,10 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.IntentHealthApi(dnac_api_client.ApiClient(configuration))
-start_time = '' # str | Start Time (default to )
-end_time = '' # str | End Time (default to )
-runsync = false # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to false)
-timeout = 10 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10)
+start_time = 'start_time_example' # str | Start Time
+end_time = 'end_time_example' # str | End Time
+runsync = False # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to False)
+timeout = 10.0 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10.0)
 
 try:
     # Network Health
@@ -108,10 +112,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **start_time** | **str**| Start Time | [default to ]
- **end_time** | **str**| End Time | [default to ]
- **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to false]
- **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10]
+ **start_time** | **str**| Start Time | 
+ **end_time** | **str**| End Time | 
+ **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to False]
+ **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10.0]
 
 ### Return type
 
@@ -123,8 +127,8 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -136,6 +140,8 @@ Site Hierarchy
 Site Hierarchy along with health Info
 
 ### Example
+
+* Api Key Authentication (APIKeyHeader): 
 ```python
 from __future__ import print_function
 import time
@@ -151,9 +157,9 @@ configuration.api_key['X-Auth-Token'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = dnac_api_client.IntentHealthApi(dnac_api_client.ApiClient(configuration))
-timestamp = '' # str | Timestamp  (default to )
-runsync = false # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to false)
-timeout = 10 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10)
+timestamp = 'timestamp_example' # str | Timestamp 
+runsync = False # bool | Enable this parameter to execute the API and return a response synchronously (optional) (default to False)
+timeout = 10.0 # float | During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated (optional) (default to 10.0)
 
 try:
     # Site Hierarchy
@@ -167,9 +173,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **timestamp** | **str**| Timestamp  | [default to ]
- **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to false]
- **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10]
+ **timestamp** | **str**| Timestamp  | 
+ **runsync** | **bool**| Enable this parameter to execute the API and return a response synchronously | [optional] [default to False]
+ **timeout** | **float**| During synchronous execution, this defines the maximum time to wait for a response, before the API execution is terminated | [optional] [default to 10.0]
 
 ### Return type
 
@@ -181,7 +187,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

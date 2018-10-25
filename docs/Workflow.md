@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **name** | **str** |  | [optional] 
 **start_time** | **int** |  | [optional] 
 **state** | **str** |  | [optional] 
-**tasks** | [**list[DeviceInnerSystemResetWorkflowTasks]**](DeviceInnerSystemResetWorkflowTasks.md) |  | [optional] 
+**tasks** | [**list[WorkflowTasks]**](WorkflowTasks.md) |  | [optional] 
 **tenant_id** | **str** |  | [optional] 
 **type** | **str** |  | [optional] 
 **use_state** | **str** |  | [optional] 
